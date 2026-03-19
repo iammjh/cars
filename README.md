@@ -2,6 +2,16 @@
 
 Premium fullscreen car showcase with parallax animations, image carousels, and dynamic color theming for 6 high-performance vehicles.
 
+## GitHub Pages Deployment
+
+1. Push this repo to GitHub
+2. Go to repo **Settings** → **Pages**
+3. Select **Source**: `Deploy from a branch`
+4. Select **Branch**: `main` (or your default branch), folder: `/ (root)`
+5. **Save** – your site will be live at `https://username.github.io/cars`
+
+The `.nojekyll` file disables Jekyll processing so assets load correctly.
+
 ## Quick Start
 
 1. **Add Images** to `assets/` folder:
