@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEX — Drive the Impossible</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+<div class="bracket tl"></div><div class="bracket tr"></div>
+<div class="bracket bl"></div><div class="bracket br"></div>
+<div id="scanlines"></div>
+<div id="vignette"></div>
+
+<nav>
+  <a href="#" class="nav-logo">APEX</a>
+  <ul class="nav-links">
+    <li><a href="#">Models</a></li>
+    <li><a href="#">Performance</a></li>
+    <li><a href="#">Configure</a></li>
+    <li><a href="#">Heritage</a></li>
+  </ul>
+  <div class="nav-slide-counter"><span id="nav-current">01</span> / <span id="nav-total">06</span></div>
+</nav>
+
+<div id="slide-brand">APEX MOTOR WORKS</div>
+
+<!-- BG TRACK -->
+<div id="bg-track">
+  <div class="bg-slide">
+    <div class="bg-slide-inner" style="background-image: url('assets/gtr.jpeg');"></div>
+    <div class="bg-overlay"></div>
+  </div>
+  <div class="bg-slide">
+    <div class="bg-slide-inner" style="background-image: url('assets/amg.jpeg');"></div>
+    <div class="bg-overlay"></div>
+  </div>
+  <div class="bg-slide">
+    <div class="bg-slide-inner" style="background-image: url('assets/gt3.jpeg');"></div>
+    <div class="bg-overlay"></div>
+  </div>
+  <div class="bg-slide">
+    <div class="bg-slide-inner" style="background-image: url('assets/bmw.jpeg');"></div>
+    <div class="bg-overlay"></div>
+  </div>
+  <div class="bg-slide">
+    <div class="bg-slide-inner" style="background-image: url('assets/lambo.jpeg');"></div>
+    <div class="bg-overlay"></div>
+  </div>
+  <div class="bg-slide">
+    <div class="bg-slide-inner" style="background-image: url('assets/sf90.jpeg');"></div>
+    <div class="bg-overlay"></div>
+  </div>
+</div>
+
+<div id="parallax-layer"></div>
+
+<!-- CONTENT PANELS -->
+<div id="content-outer">
+
+  <!-- 0 · NISSAN GT-R NISMO 2025 -->
+  <div class="slide-content" id="sc0">
+    <div class="left-block">
+      <div class="badge"><span class="badge-dot"></span>Nissan Motorsport · Nismo Special Edition · 2025</div>
+      <div class="headline">
+        <span class="hl-solid">NISSAN</span>
+        <span class="hl-outline">GT-R</span>
+        <span class="hl-gradient">NISMO</span>
+      </div>
+      <p class="subtitle">Godzilla, perfected. The 2025 GT-R Nismo is hand-assembled at the Nismo factory — every engine signed by a single master technician, tuned to destroy lap records.</p>
+      <div class="cta-row">
+        <button class="btn-primary">Build Yours</button>
+        <button class="btn-secondary">Nismo DNA</button>
+      </div>
+    </div>
+    <div class="stats-card">
+      <div class="card-label">GT-R Nismo · R35 · 2025</div>
+      <div class="stat-row"><div><span class="stat-number">2.7</span><span class="stat-unit">SEC</span></div><div class="stat-desc">0 – 100 km/h (ATTESA AWD)</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat-row"><div><span class="stat-number">600</span><span class="stat-unit">HP</span></div><div class="stat-desc">Hand-built VR38DETT twin-turbo V6</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat-row"><div><span class="stat-number">315</span><span class="stat-unit">KM/H</span></div><div class="stat-desc">Electronically limited top speed</div></div>
+    </div>
+  </div>
+
+  <!-- 1 · MERCEDES-AMG GT BLACK SERIES -->
+  <div class="slide-content" id="sc1">
+    <div class="left-block">
+      <div class="badge"><span class="badge-dot"></span>Mercedes-AMG · Black Series · Affalterbach</div>
+      <div class="headline">
+        <span class="hl-solid">AMG GT</span>
+        <span class="hl-outline">BLACK</span>
+        <span class="hl-gradient">SERIES</span>
+      </div>
+      <p class="subtitle">The pinnacle of AMG's Black Series lineage. A flat-plane crank V8 screaming to 7,200 rpm — aerodynamics forged in the crucible of GT3 motorsport.</p>
+      <div class="cta-row">
+        <button class="btn-primary">Configure AMG</button>
+        <button class="btn-secondary">Black Legacy</button>
+      </div>
+    </div>
+    <div class="stats-card">
+      <div class="card-label">AMG GT BS · C190 · 2025</div>
+      <div class="stat-row"><div><span class="stat-number">3.2</span><span class="stat-unit">SEC</span></div><div class="stat-desc">0 – 100 km/h (AMG Speedshift)</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat-row"><div><span class="stat-number">730</span><span class="stat-unit">HP</span></div><div class="stat-desc">4.0 L AMG V8 flat-plane crank</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat-row"><div><span class="stat-number">325</span><span class="stat-unit">KM/H</span></div><div class="stat-desc">Electronically limited top speed</div></div>
+    </div>
+  </div>
+
+  <!-- 2 · PORSCHE 911 GT3 RS -->
+  <div class="slide-content" id="sc2">
+    <div class="left-block">
+      <div class="badge"><span class="badge-dot"></span>Porsche Motorsport · Type 992 · N/A Flat-Six</div>
+      <div class="headline">
+        <span class="hl-solid">PORSCHE</span>
+        <span class="hl-outline">911</span>
+        <span class="hl-gradient">GT3 RS</span>
+      </div>
+      <p class="subtitle">The most extreme road-legal 911 ever built. Active aerodynamics lifted straight from Le Mans — downforce measured in hundreds of kilograms.</p>
+      <div class="cta-row">
+        <button class="btn-primary">Order Yours</button>
+        <button class="btn-secondary">Track Specs</button>
+      </div>
+    </div>
+    <div class="stats-card">
+      <div class="card-label">GT3 RS · Type 992</div>
+      <div class="stat-row"><div><span class="stat-number">3.2</span><span class="stat-unit">SEC</span></div><div class="stat-desc">0 – 100 km/h (PDK)</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat-row"><div><span class="stat-number">525</span><span class="stat-unit">HP</span></div><div class="stat-desc">4.0 L naturally aspirated flat-six</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat-row"><div><span class="stat-number">296</span><span class="stat-unit">KM/H</span></div><div class="stat-desc">Governed top speed</div></div>
+    </div>
+  </div>
+
+  <!-- 3 · BMW M4 CSL -->
+  <div class="slide-content" id="sc3">
+    <div class="left-block">
+      <div class="badge"><span class="badge-dot"></span>BMW M GmbH · 1,000 Units Worldwide</div>
+      <div class="headline">
+        <span class="hl-solid">BMW</span>
+        <span class="hl-outline">M4</span>
+        <span class="hl-gradient">CSL</span>
+      </div>
+      <p class="subtitle">Competition. Sport. Leicht. One thousand units. No rear seats. No compromises. The purest expression of fifty years of M performance heritage.</p>
+      <div class="cta-row">
+        <button class="btn-primary">Reserve Now</button>
+        <button class="btn-secondary">M Heritage</button>
+      </div>
+    </div>
+    <div class="stats-card">
+      <div class="card-label">M4 CSL · G82 Special</div>
+      <div class="stat-row"><div><span class="stat-number">3.6</span><span class="stat-unit">SEC</span></div><div class="stat-desc">0 – 100 km/h (M DCT)</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat-row"><div><span class="stat-number">550</span><span class="stat-unit">HP</span></div><div class="stat-desc">S58 inline-six twin-turbo</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat-row"><div><span class="stat-number">307</span><span class="stat-unit">KM/H</span></div><div class="stat-desc">Electronically limited top speed</div></div>
+    </div>
+  </div>
+
+  <!-- 4 · LAMBORGHINI REVUELTO -->
+  <div class="slide-content" id="sc4">
+    <div class="left-block">
+      <div class="badge"><span class="badge-dot"></span>Automobili Lamborghini · Sant'Agata Bolognese</div>
+      <div class="headline">
+        <span class="hl-solid">LAMBO</span>
+        <span class="hl-outline">RGHINI</span>
+        <span class="hl-gradient">REVUELTO</span>
+      </div>
+      <p class="subtitle">The raging bull, electrified. A screaming 6.5 L V12 paired with three electric motors — the most violent, most powerful Lamborghini ever conceived.</p>
+      <div class="cta-row">
+        <button class="btn-primary">Configure</button>
+        <button class="btn-secondary">V12 Legacy</button>
+      </div>
+    </div>
+    <div class="stats-card">
+      <div class="card-label">Revuelto · LB744</div>
+      <div class="stat-row"><div><span class="stat-number">2.5</span><span class="stat-unit">SEC</span></div><div class="stat-desc">0 – 100 km/h launch</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat-row"><div><span class="stat-number">1,001</span><span class="stat-unit">HP</span></div><div class="stat-desc">V12 + tri-motor hybrid system</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat-row"><div><span class="stat-number">350</span><span class="stat-unit">KM/H</span></div><div class="stat-desc">Verified top speed</div></div>
+    </div>
+  </div>
+
+  <!-- 5 · FERRARI SF90 STRADALE -->
+  <div class="slide-content" id="sc5">
+    <div class="left-block">
+      <div class="badge"><span class="badge-dot"></span>Ferrari S.p.A. · Maranello · Est. 1947</div>
+      <div class="headline">
+        <span class="hl-solid">FERRARI</span>
+        <span class="hl-outline">SF90</span>
+        <span class="hl-gradient">STRADALE</span>
+      </div>
+      <p class="subtitle">The prancing horse, reborn in hybrid fire. Ferrari's most powerful road car ever — a plug-in masterpiece that rewrites what is possible from Maranello.</p>
+      <div class="cta-row">
+        <button class="btn-primary">Personalise</button>
+        <button class="btn-secondary">The Legacy</button>
+      </div>
+    </div>
+    <div class="stats-card">
+      <div class="card-label">SF90 Stradale · F173</div>
+      <div class="stat-row"><div><span class="stat-number">2.5</span><span class="stat-unit">SEC</span></div><div class="stat-desc">0 – 100 km/h combined</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat-row"><div><span class="stat-number">1,000</span><span class="stat-unit">HP</span></div><div class="stat-desc">V8 biturbo + 3 electric motors</div></div>
+      <div class="stat-divider"></div>
+      <div class="stat-row"><div><span class="stat-number">340</span><span class="stat-unit">KM/H</span></div><div class="stat-desc">Electronically governed top speed</div></div>
+    </div>
+  </div>
+
+</div><!-- /content-outer -->
+
+<div id="slide-dots"></div>
+<div id="progress-line"></div>
+
+<div class="nav-hint" id="nav-hint">
+  <span>SCROLL</span>
+  <svg viewBox="0 0 16 16"><polyline points="4,6 8,10 12,6"/></svg>
+</div>
+
+<div id="ticker">
+  <div class="ticker-label">LIVE</div>
+  <div class="ticker-track"><div class="ticker-scroll" id="ticker-scroll"></div></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
